@@ -12,12 +12,14 @@
 
   <body>
     <div class = "container">
+    <%= render 'header' %>
       <% flash.each do |type, msg| %>
         <div class = "alert alert-<%= type %>"> <%= msg %> </div>
       <% end %>
     <%= yield %>
     <br>
     <br>
+    <%= render 'footer' %>
     <hr>
     <%= debug(params) if Rails.env.development? %>
     </div>
