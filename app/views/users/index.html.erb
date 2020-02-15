@@ -1,7 +1,8 @@
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand">Navbar</a>
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-</nav>
+<% provide(:title, "Home") %>
+<%= render 'header' %>
+
+<div class="jumbotron">
+  <h1 class="display-4">Hello, this is my sample app!</h1>
+  <p class="lead">This is a simple app you can log in to give it a try!!</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Log in</a>
+</div>

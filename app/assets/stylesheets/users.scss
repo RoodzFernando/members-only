@@ -1,3 +1,28 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+// variables
+$border: 1px solid red;
+$border-radius: 5px;
+$my-white: #fff;
+// logo
+header {
+    // border: $border;
+    border-radius: $border-radius;
+}
+
+.nav-item {
+    // border: $border;
+    padding-left: 10px;
+    a {
+        color: $my-white;
+        &:hover {
+            color: $my-white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+// jumbotron
+
+.jumbotron {
+    text-align: center;
+}
