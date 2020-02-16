@@ -7,9 +7,11 @@
   <%= link_to "Sign up", sign_up_path, class: "btn btn-primary btn-lg"  %>
 </div>
 
-<ul>
+
   <% @users.each do |user| %>
-      <li><%= user.name %></li>
-      <li><%= user.email %></li>
+      <h3>
+      <%= gravatar_for(user)%> <%= user.name %>
+      <%= link_to "X",user, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+      </h3>
   <% end %>
-</ul>
+
